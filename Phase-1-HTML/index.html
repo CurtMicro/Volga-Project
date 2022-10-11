@@ -6,7 +6,7 @@
     <meta name="keywords" content="Lab, Equipment, School, Education" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./globals.css" />
-    <title>Volga Equipment</title>
+    <title>Volga Home</title>
   </head>
   <body>
     <!--header container at top -->
@@ -32,7 +32,10 @@
       <!--Big image slider displaying content-->
       <div class="imageSlider">
         <h2>Image Slider Heading</h2>
-        <button id="left-slider-button">Left</button>
+        <!-- These will have to be implemented in different ways throught the project-->
+        <!-- Ie: CSS vs JS/Jquery-->
+        <a href="" id="left-slider-button">Left</a>
+        <a href="" id="right-slider-button">Right</a>
         <figure id="slide-1">
           <img class="slider-image" src="" alt="image1" />
           <figcaption>Fig.1</figcaption>
@@ -45,7 +48,6 @@
           <img class="slider-image" src="" alt="image3" />
           <figcaption>Fig.3</figcaption>
         </figure>
-        <button id="right-slider-button">Right</button>
       </div>
       <!--End Image Slider-->
 
@@ -53,11 +55,16 @@
       <div id="content-container">
         <section id="product-images">
           <ul id="product-container">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Product 1</li>
+            <li>Product 1</li>
+            <li>Product 1</li>
+            <li>Product 1</li>
+          </ul>
+          <ul id="service-container">
+            <li>Product 1</li>
+            <li>Product 1</li>
+            <li>Product 1</li>
+            <li>Product 1</li>
           </ul>
         </section>
         <!--Desktop = 3 cols, Table = 3 cols, Mobile = 1 col w/ bigger centered content-->
@@ -93,12 +100,23 @@
           <!--middle of the page nav spit into 3 elements-->
           <div id="mid-nav-container">
             <!--each has their own background image and a box shadow-->
-            <a class="mid-nav-link" href="./products.html">Products</a>
-            <a class="mid-nav-link" href="./services.html">Services</a>
-            <a class="mid-nav-link" href="./contact.html">Contact Us</a>
+            <img
+              class="mid-nav-link"
+              href="./products.html"
+              alt="product-image"
+            />
+            <img
+              class="mid-nav-link"
+              href="./services.html"
+              alt="service-image"
+            />
+            <img
+              class="mid-nav-link"
+              href="./contact.html"
+              alt="contact-image"
+            />
           </div>
         </section>
-        <section id="closing-section"></section>
       </div>
     </div>
     <!--end main-->
@@ -109,8 +127,9 @@
       <img src="" alt="volgaLogo" />
 
       <!--center git hub link in footer-->
-
-      <a href="https://github.com/"></a>
+      <a href="https://github.com/CurtMicro/Volga-Project">
+        <img src="./assets/blackGithubIcon.png" alt="blackGithubIcon" />
+      </a>
 
       <!--footer right side nav-->
       <nav>

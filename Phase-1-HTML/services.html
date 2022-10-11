@@ -3,25 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Lab, Equipment, School, Education" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Volga Equipment</title>
+    <link rel="stylesheet" href="./globals.css" />
+    <title>Volga Services</title>
   </head>
   <body>
     <!--header container at top -->
-    <div id="header">
-      <!--left side logo-->
+    <header>
+      <!--top left side logo-->
       <img src="" alt="volgaLogo" />
+
       <!--h1 centered with company name-->
       <h1>Volga Equipment</h1>
-      <!--top right side nav-->
+
+      <!--top right side nav -->
       <nav>
         <a href="./">Home</a>
         <a href="./contact.html">Products</a>
         <a href="./services.html">Services</a>
         <a href="./contact.html">Contact</a>
       </nav>
+    </header>
+    <!--End Header-->
+
+    <!--main container where main content of a page is display -->
+    <div id="main">
+      <!--Big image slider displaying content-->
+      <div class="imageSlider">
+        <h2>Image Slider Heading</h2>
+        <button id="left-slider-button">Left</button>
+        <figure id="slide-1">
+          <img class="slider-image" src="" alt="image1" />
+          <figcaption>Fig.1</figcaption>
+        </figure>
+        <figure id="slide-2">
+          <img class="slider-image" src="" alt="image2" />
+          <figcaption>Fig.2</figcaption>
+        </figure>
+        <figure id="slide-3">
+          <img class="slider-image" src="" alt="image3" />
+          <figcaption>Fig.3</figcaption>
+        </figure>
+        <button id="right-slider-button">Right</button>
+      </div>
+      <!--End Image Slider-->
+
+      <!-- Informational container-->
+      <div id="content-container">
+        <section id="product-images">
+          <ul id="product-container">
+            <li>Product 1</li>
+            <li>Product 1</li>
+            <li>Product 1</li>
+            <li>Product 1</li>
+          </ul>
+          <ul id="service-container">
+            <li>Product 1</li>
+            <li>Product 1</li>
+            <li>Product 1</li>
+            <li>Product 1</li>
+          </ul>
+        </section>
+        <!--Desktop = 3 cols, Table = 3 cols, Mobile = 1 col w/ bigger centered content-->
+        <section id="article-container">
+          <!-- each article seperates the content-->
+          <article>
+            <h3>Article Heading 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quasi
+              tenetur, esse consequuntur libero quaerat nihil laboriosam ex unde
+              cupiditate doloremque ratione non omnis cumque! Iusto blanditiis
+              corporis eligendi repellendus?
+            </p>
+          </article>
+          <article>
+            <h3>Article Heading 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quasi
+              tenetur, esse consequuntur libero quaerat nihil laboriosam ex unde
+              cupiditate doloremque ratione non omnis cumque! Iusto blanditiis
+              corporis eligendi repellendus?
+            </p>
+          </article>
+          <article>
+            <h3>Article Heading 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quasi
+              tenetur, esse consequuntur libero quaerat nihil laboriosam ex unde
+              cupiditate doloremque ratione non omnis cumque! Iusto blanditiis
+              corporis eligendi repellendus?
+            </p>
+          </article>
+          <!--middle of the page nav spit into 3 elements-->
+          <div id="mid-nav-container">
+            <!--each has their own background image and a box shadow-->
+            <img
+              class="mid-nav-link"
+              href="./products.html"
+              alt="product-image"
+            />
+            <img
+              class="mid-nav-link"
+              href="./services.html"
+              alt="service-image"
+            />
+            <img
+              class="mid-nav-link"
+              href="./contact.html"
+              alt="contact-image"
+            />
+          </div>
+        </section>
+        <section id="closing-section"></section>
+      </div>
     </div>
-    <div id="main"></div>
-    <div id="footer"></div>
+    <!--end main-->
+
+    <!--footer at bottom of page-->
+    <footer>
+      <!--footer left side logo-->
+      <img src="" alt="volgaLogo" />
+
+      <!--center git hub link in footer-->
+      <a href="https://github.com/CurtMicro/Volga-Project">
+        <img src="./assets/blackGithubIcon.png" alt="blackGithubIcon" />
+      </a>
+
+      <!--footer right side nav-->
+      <nav>
+        <a href="./">Home</a>
+        <a href="./contact.html">Products</a>
+        <a href="./services.html">Services</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </footer>
   </body>
 </html>
