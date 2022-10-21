@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="keywords" content="Lab, Equipment, School, Education" />
+    <meta name="keywords" content="Lab, Book, Equipment, School, Education" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./globals.css" />
     <title>Contact Volga</title>
+
+    <script>
+      function sendFakeEmail() {
+        alert("Sent Fake Email Succesfully");
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -31,7 +37,7 @@
           </li>
         </ul>
       </nav>
-      <!--top right search bar wont function-->
+      <!--top right search bar won't function...or will it? maybe-->
       <form role="search" aria-label="site">
         <label>
           <span>Search</span>
@@ -46,7 +52,7 @@
     <main>
       <article>
         <h2>Contant Us</h2>
-        <form action="./scripts/action_page.js" method="get">
+        <form onsubmit="return sendFakeEmail()">
           <label for="fname">First name:</label>
           <input type="text" id="fname" name="fname" />
           <label for="lname">Last name:</label>

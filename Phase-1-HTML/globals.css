@@ -8,6 +8,27 @@ body {
   width: 100%;
   text-align: center;
 }
+header,
+footer {
+  background-color: gainsboro;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+header {
+  height: 4rem;
+}
+header > nav > ul {
+  display: flex;
+  font-size: 1.75rem;
+  padding: 1.25rem;
+  width: max-content;
+}
+
+header > nav > ul > li {
+  margin: 1.25rem;
+}
 a {
   text-decoration: none;
 }
@@ -34,4 +55,70 @@ ol {
 #github-logo {
   width: 100px;
   height: 100px;
+}
+
+.rating {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label {
+  position: relative;
+  width: 2rem;
+  font-size: 2rem;
+  color: #ffd700;
+  cursor: pointer;
+}
+
+.rating > label::before {
+  content: "\2605";
+  position: absolute;
+  opacity: 0;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+  opacity: 1 !important;
+}
+
+.rating > input:checked ~ label:before {
+  opacity: 1;
+}
+
+.rating:hover > input:checked ~ label:before {
+  opacity: 0.4;
+}
+
+.product-grid {
+  max-width: 80%;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.product-grid > li {
+  height: 16rem;
+  outline: 1px solid black;
+  width: 12%;
+  display: flex;
+  justify-content: center;
+}
+
+.product-grid > li > article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  outline: 1px solid red;
 }

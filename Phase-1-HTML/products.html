@@ -3,69 +3,593 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="keywords" content="Lab, Equipment, School, Education" />
+    <meta name="keywords" content="Lab, Book, Equipment, School, Education" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./globals.css" />
     <title>Volga Products</title>
+
+    <script>
+      function makeFakeFilter() {
+        alert("Data Filtered");
+      }
+    </script>
   </head>
   <body>
-    <!--header container at top -->
     <header>
-      <!--top left side logo-->
-      <img src="./assets/Volga-logo.svg" alt="Volga Logo" />
-
+      <!--top middle side logo-->
+      <a href="./">
+        <img src="./assets/Volga-logo.svg" alt="Volga Logo" />
+      </a>
       <!--top right side nav -->
       <nav>
-        <a href="./">Home</a>
-        <a href="./products.html">Products</a>
-        <a href="./services.html">Services</a>
-        <a href="./contact.html">Contact</a>
+        <ul>
+          <li>
+            <a href="./">Home</a>
+          </li>
+          <li>
+            <a href="./products.html">Products</a>
+          </li>
+          <li>
+            <a href="./services.html">Services</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
       </nav>
+      <!--top right search bar wont function-->
+      <form role="search" aria-label="site">
+        <label>
+          <span>Search</span>
+          <input type="search" />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
     </header>
-    <!--End Header-->
 
-    <!--main container where main content of a page is display -->
-    <div id="main">
-      <!-- Informational container-->
-      <div id="content-container">
-        <section id="product-images">
-          <h2>Product Images</h2>
-          <ul>
-            <li>Product 1</li>
-            <li>Product 1</li>
-            <li>Product 1</li>
-            <li>Product 1</li>
+    <br />
+
+    <main>
+      <h1>Products Page</h1>
+      <aside aria-label="Left Side Bar">
+        <article>
+          <h2>Fake Filter Side Bar</h2>
+          <section>
+            <h3>Quick Filters:</h3>
+            <form action="#" onsubmit="makeFakeFilter()">
+              <label for="Something">Some Variable</label>
+              <input type="text" id="var" name="var" />
+              <button type="submit">Submit</button>
+            </form>
+          </section>
+          <section>
+            <h3>All Filters:</h3>
+            <form action="#" onsubmit="makeFakeFilter()">
+              <label for="Something">Some Variable</label>
+              <input type="text" id="var" name="var" />
+              <button type="submit">Submit</button>
+            </form>
+          </section>
+        </article>
+      </aside>
+
+      <article>
+        <h2>Products</h2>
+        <section>
+          <h3>Hot Buys</h3>
+          <ul class="product-grid">
+            <!--do I make these clickable and then add an animation to a product view?-->
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
           </ul>
         </section>
-        <section id="product-reviews">
-          <h2>Product Review</h2>
-          <ul>
-            <li>Product 1</li>
-            <li>Product 1</li>
-            <li>Product 1</li>
-            <li>Product 1</li>
+        <section>
+          <h2>Best Sellers:</h2>
+          <ul class="product-grid">
+            <!--do I make these clickable and then add an animation to a product view?-->
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
           </ul>
         </section>
-      </div>
-    </div>
-    <!--end main-->
+        <section>
+          <h2>New Products</h2>
+          <ul class="product-grid">
+            <!--do I make these clickable and then add an animation to a product view?-->
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Product Name</h4>
+                <img src="" alt="Product Image" />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
 
+    <br />
     <!--footer at bottom of page-->
     <footer>
       <!--footer left side logo-->
-      <img src="./assets/smallVolga-logo.svg" alt="smallVolgaLogo" />
-
+      <a href="">
+        <img src="./assets/smallVolga-logo.svg" alt="smallVolgaLogo" />
+      </a>
       <!--center git hub link in footer-->
       <a href="https://github.com/CurtMicro/Volga-Project">
-        <img src="./assets/blackGithubIcon.png" alt="blackGithubIcon" />
+        <img
+          id="github-logo"
+          src="./assets/blackGithubIcon.png"
+          alt="blackGithubIcon"
+        />
       </a>
 
-      <!--footer right side nav-->
+      <!--footer right stacked side nav-->
       <nav>
-        <a href="./">Home</a>
-        <a href="./products.html">Products</a>
-        <a href="./services.html">Services</a>
-        <a href="./contact.html">Contact</a>
+        <ul>
+          <li>
+            <a href="./">Home</a>
+          </li>
+          <li>
+            <a href="./products.html">Products</a>
+          </li>
+          <li>
+            <a href="./services.html">Services</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
       </nav>
     </footer>
   </body>
