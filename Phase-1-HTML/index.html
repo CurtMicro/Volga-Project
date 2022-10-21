@@ -12,11 +12,9 @@
     <!--header container at top -->
     <header>
       <!--top left side logo-->
-      <img src="" alt="volgaLogo" />
-
-      <!--h1 centered with company name-->
-      <h1>Volga Equipment</h1>
-
+      <a href="./">
+        <img src="./assets/Volga-logo.svg" alt="Volga Logo" />
+      </a>
       <!--top right side nav -->
       <nav>
         <a href="./">Home</a>
@@ -30,42 +28,88 @@
     <!--main container where main content of a page is display -->
     <div id="main">
       <!--Big image slider displaying content-->
-      <div class="imageSlider">
+      <div id="imageContainers">
         <h2>Image Slider Heading</h2>
         <!-- These will have to be implemented in different ways throught the project-->
-        <!-- Ie: CSS vs JS/Jquery-->
-        <a href="" id="left-slider-button">Left</a>
-        <a href="" id="right-slider-button">Right</a>
-
-        <figure id="slide-1">
-          <img class="slider-image" src="" alt="image1" />
-          <figcaption>Fig.1</figcaption>
-        </figure>
-        <figure id="slide-2">
-          <img class="slider-image" src="" alt="image2" />
-          <figcaption>Fig.2</figcaption>
-        </figure>
-        <figure id="slide-3">
-          <img class="slider-image" src="" alt="image3" />
-          <figcaption>Fig.3</figcaption>
-        </figure>
+        <!-- Ie: CSS or JS/Jquery, try for MVP-->
+        <div id="slider-buttons">
+          <button action="" id="left-button">Left</button>
+          <button action="" id="right-button">Right</button>
+        </div>
+        <section id="image-slider">
+          <!--Imaged will be css background images with size of cover and a opacity shift to remove extra tunneling-->
+          <figure class="slide not-focused">
+            <img
+              class="slider-image"
+              src="./assets/imageSlider/BookImageSlide2.jpg"
+              alt="Old Knowledge Banner Image"
+            />
+            <figcaption>Fig.2</figcaption>
+          </figure>
+          <figure id="focused" class="slide">
+            <img
+              class="slider-image"
+              src="./assets/imageSlider/imageSlider1.jpg"
+              alt="Excessive Knowledge Banner Image"
+            />
+            <figcaption>Fig.1</figcaption>
+          </figure>
+          <figure class="slide not-focused">
+            <img
+              class="slider-image"
+              src="./assets/imageSlider/imageSlider3.jpg"
+              alt="Lecture Hall Banner Image"
+            />
+            <figcaption>Fig.3</figcaption>
+          </figure>
+        </section>
       </div>
       <!--End Image Slider-->
 
       <!-- Informational container-->
       <div id="content-container">
         <section id="grid-containers">
-          <ul id="product-grid">
-            <li>Product 1</li>
-            <li>Product 1</li>
-            <li>Product 1</li>
-            <li>Product 1</li>
+          <ul id="product-category-grid">
+            <li>
+              <img
+                src="./assets/books/GeneralScienceBook.jpg"
+                alt="General Science Book"
+                href="./products.html"
+              />
+            </li>
+            <li>
+              <img
+                src="./assets/books/ChemistryBook.jpg"
+                alt="Chemistry Category Book"
+                href="./products.html"
+              />
+            </li>
+            <li>
+              <img
+                src="./assets/books/PhysicsBook.jpg"
+                alt="Physics Category Book"
+                href="./products.html"
+              />
+            </li>
+            <li>
+              <img
+                src="./assets/books/BiologyBook1.jpg"
+                alt="Biology Category Book"
+                href="./products.html"
+              />
+            </li>
+            <li>
+              <img
+                src="./assets/books/AllBooks.jpg"
+                alt="All Category Book"
+                href="./products.html"
+              />
+            </li>
           </ul>
           <ul id="service-grid">
-            <li>Service</li>
-            <li>Product 1</li>
-            <li>Product 1</li>
-            <li>Product 1</li>
+            <li>Training Services</li>
+            <li>Safety Services</li>
+            <li>Organizational Services</li>
           </ul>
         </section>
         <!--Desktop = 3 cols, Table = 3 cols, Mobile = 1 col w/ bigger centered content-->
@@ -125,11 +169,16 @@
     <!--footer at bottom of page-->
     <footer>
       <!--footer left side logo-->
-      <img src="" alt="smallVolgaLogo" />
-
+      <a href="">
+        <img src="./assets/smallVolga-logo.svg" alt="smallVolgaLogo" />
+      </a>
       <!--center git hub link in footer-->
       <a href="https://github.com/CurtMicro/Volga-Project">
-        <img src="./assets/blackGithubIcon.png" alt="blackGithubIcon" />
+        <img
+          id="github-logo"
+          src="./assets/blackGithubIcon.png"
+          alt="blackGithubIcon"
+        />
       </a>
 
       <!--footer right stacked side nav-->
