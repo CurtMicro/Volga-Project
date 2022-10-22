@@ -105,9 +105,9 @@ ol {
   gap: 2rem;
 }
 .product-grid > li {
-  height: 16rem;
+  height: 20rem;
   outline: 1px solid black;
-  width: 12%;
+  width: 14%;
   display: flex;
   justify-content: center;
 }

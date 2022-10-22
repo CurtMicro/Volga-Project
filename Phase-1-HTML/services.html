@@ -11,24 +11,45 @@
   <body>
     <!--header container at top -->
     <header>
-      <!--top left side logo-->
-      <img src="./assets/Volga-logo.svg" alt="Volga Logo" />
-
+      <!--top middle side logo-->
+      <a href="./">
+        <img src="./assets/Volga-logo.svg" alt="Volga Logo" />
+      </a>
       <!--top right side nav -->
       <nav>
-        <a href="./">Home</a>
-        <a href="./products.html">Products</a>
-        <a href="./services.html">Services</a>
-        <a href="./contact.html">Contact</a>
+        <ul>
+          <li>
+            <a href="./">Home</a>
+          </li>
+          <li>
+            <a href="./products.html">Products</a>
+          </li>
+          <li>
+            <a href="./services.html">Services</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
       </nav>
+      <!--top right search bar wont function-->
+      <form role="search" aria-label="site">
+        <label>
+          <span>Search</span>
+          <input type="search" />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
     </header>
-    <!--End Header-->
+
+    <br />
 
     <!--main container where main content of a page is display -->
-    <div id="main">
+    <main>
       <!-- Informational container-->
       <div id="content-container">
         <section id="service-images">
+          <h2>Offered Services:</h2>
           <ul id="service-container">
             <!--display float, justify space-evently-->
             <!--Will be "clickable" image cards-->
@@ -82,25 +103,40 @@
           <!--middle of the page nav spit into 3 elements-->
         </section>
       </div>
-    </div>
-    <!--end main-->
+    </main>
 
+    <br />
     <!--footer at bottom of page-->
     <footer>
       <!--footer left side logo-->
-      <img src="./assets/smallVolga-logo.svg" alt="smallVolgaLogo" />
-
+      <a href="">
+        <img src="./assets/smallVolga-logo.svg" alt="smallVolgaLogo" />
+      </a>
       <!--center git hub link in footer-->
       <a href="https://github.com/CurtMicro/Volga-Project">
-        <img src="./assets/blackGithubIcon.png" alt="blackGithubIcon" />
+        <img
+          id="github-logo"
+          src="./assets/blackGithubIcon.png"
+          alt="blackGithubIcon"
+        />
       </a>
 
-      <!--footer right side nav-->
+      <!--footer right stacked side nav-->
       <nav>
-        <a href="./">Home</a>
-        <a href="./products.html">Products</a>
-        <a href="./services.html">Services</a>
-        <a href="./contact.html">Contact</a>
+        <ul>
+          <li>
+            <a href="./">Home</a>
+          </li>
+          <li>
+            <a href="./products.html">Products</a>
+          </li>
+          <li>
+            <a href="./services.html">Services</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
       </nav>
     </footer>
   </body>
