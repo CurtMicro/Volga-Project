@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Lab, Book, Equipment, School, Education" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./globals.css" />
+    <title>Volga Home</title>
+  </head>
+  <body>
+    <header>
+      <!--top middle side logo-->
+      <a href="./">
+        <img src="./assets/Volga-logo.svg" alt="Volga Logo" />
+      </a>
+      <!--top right side nav -->
+      <nav>
+        <ul>
+          <li>
+            <a href="./">Home</a>
+          </li>
+          <li>
+            <a href="./products.html">Products</a>
+          </li>
+          <li>
+            <a href="./services.html">Services</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <!--top right search bar wont function-->
+      <form role="search" aria-label="site">
+        <label>
+          <span>Search</span>
+          <input type="search" />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </header>
+
+    <br />
+
+    <!--main container where main content of a page is display -->
+    <main>
+      <!--Big image slider displaying content-->
+      <article id="slider-container">
+        <h1>
+          Many Find the Universe Confusing, <br />that's the beauty of it.
+        </h1>
+        <br />
+        <!-- Ie: CSS or JS/Jquery, try for MVP-->
+        <div id="slider-button-container">
+          <button id="left-button">Left</button>
+          <button id="right-button">Right</button>
+        </div>
+
+        <div>
+          <!--Imaged will be css background images with size of cover and a opacity shift to remove extra tunneling-->
+          <figure id="focused" class="slide">
+            <img
+              class="slide-image"
+              src="./assets/imageSlider/imageSlider1.jpg"
+              alt="Excessive Knowledge Banner Image"
+            />
+            <figcaption>
+              Make sure to check our ever expanding content selection.
+            </figcaption>
+          </figure>
+          <figure class="slide not-focused">
+            <img
+              class="slide-image"
+              src="./assets/imageSlider/BookImageSlide2.jpg"
+              alt="Old Knowledge Banner Image"
+            />
+            <figcaption>
+              <i>Everything is theoretically impossible, until it is done"</i>"
+              <span> - Robert A Henlein</span>
+            </figcaption>
+          </figure>
+          <figure class="slide not-focused">
+            <img
+              class="slide-image"
+              src="./assets/imageSlider/imageSlider3.jpg"
+              alt="Lecture Hall Banner Image"
+            />
+            <figcaption>
+              <i> "There is no substitute for hard work"</i>
+              <span> - Thomas Edison</span>
+            </figcaption>
+          </figure>
+        </div>
+      </article>
+      <!--End Image Slider-->
+
+      <br />
+      <!-- Informational container-->
+      <div>
+        <article>
+          <a href="./products.html">
+            <h2>General Science Books</h2>
+            <img
+              src="./assets/books/GeneralScienceBook.jpg"
+              alt="General Science Book"
+            />
+          </a>
+        </article>
+        <article>
+          <a href="./products.html">
+            <h2>Chemistry Books</h2>
+            <img
+              src="./assets/books/ChemistryBook.jpg"
+              alt="Chemistry Category Book"
+            />
+          </a>
+        </article>
+        <article>
+          <a href="./products.html">
+            <h2>Physics Books</h2>
+            <img
+              src="./assets/books/PhysicsBook.jpg"
+              alt="Physics Category Book"
+            />
+          </a>
+        </article>
+        <article>
+          <a href="./products.html">
+            <h2>Biology Books</h2>
+            <img
+              src="./assets/books/BiologyBook1.jpg"
+              alt="Biology Category Book"
+            />
+          </a>
+        </article>
+        <article>
+          <a href="./products.html">
+            <h2>All Books</h2>
+            <img src="./assets/books/AllBooks.jpg" alt="All Category Book" />
+          </a>
+        </article>
+      </div>
+
+      <h2>We offer a variety of Services</h2>
+      <div>
+        <article>
+          <h3>Training Services</h3>
+          <a href="./services.html">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quasi
+              tenetur, esse consequuntur libero quaerat nihil laboriosam ex unde
+              cupiditate doloremque ratione non omnis cumque! Iusto blanditiis
+              corporis eligendi repellendus?
+            </p>
+          </a>
+        </article>
+        <article>
+          <h3>Safety Services</h3>
+          <a href="./services.html">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quasi
+              tenetur, esse consequuntur libero quaerat nihil laboriosam ex unde
+              cupiditate doloremque ratione non omnis cumque! Iusto blanditiis
+              corporis eligendi repellendus?
+            </p>
+          </a>
+        </article>
+        <article>
+          <h3>Organizational Services</h3>
+          <a href="./services.html">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quasi
+              tenetur, esse consequuntur libero quaerat nihil laboriosam ex unde
+              cupiditate doloremque ratione non omnis cumque! Iusto blanditiis
+              corporis eligendi repellendus?
+            </p>
+          </a>
+        </article>
+      </div>
+      <!--middle of the page nav spit into 3 elements-->
+      <aside id="mid-nav-container">
+        <!--each has their own background image and a box shadow-->
+
+        <a href="./products.html">
+          <h3>Products</h3>
+          <img
+            class="mid-nav-link"
+            src="./assets/products-img.jpg"
+            alt="product-image"
+          />
+        </a>
+        <a href="./services.html">
+          <h3>Services</h3>
+          <img
+            class="mid-nav-link"
+            src="./assets/services.jpg"
+            alt="service-image"
+          />
+        </a>
+        <a href="./contact.html">
+          <h3>Contact Us</h3>
+          <img
+            class="mid-nav-link"
+            src="./assets/contact.jpg"
+            alt="contact-image"
+          />
+        </a>
+      </aside>
+    </main>
+    <!--end main-->
+
+    <br />
+    <!--footer at bottom of page-->
+    <footer>
+      <!--footer left side logo-->
+      <a href="">
+        <img src="./assets/smallVolga-logo.svg" alt="smallVolgaLogo" />
+      </a>
+      <!--center git hub link in footer-->
+      <a href="https://github.com/CurtMicro/Volga-Project">
+        <img
+          id="github-logo"
+          src="./assets/blackGithubIcon.png"
+          alt="blackGithubIcon"
+        />
+      </a>
+
+      <!--footer right stacked side nav-->
+      <nav>
+        <ul>
+          <li>
+            <a href="./">Home</a>
+          </li>
+          <li>
+            <a href="./products.html">Products</a>
+          </li>
+          <li>
+            <a href="./services.html">Services</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

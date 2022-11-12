@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Lab, Book, Equipment, School, Education" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./globals.css" />
+    <title>Volga Products</title>
+
+    <script>
+      function makeFakeFilter() {
+        alert("Data Filtered");
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <!--top middle side logo-->
+      <a href="./">
+        <img src="./assets/Volga-logo.svg" alt="Volga Logo" />
+      </a>
+      <!--top right side nav -->
+      <nav>
+        <ul>
+          <li>
+            <a href="./">Home</a>
+          </li>
+          <li>
+            <a href="./products.html">Products</a>
+          </li>
+          <li>
+            <a href="./services.html">Services</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <!--top right search bar wont function-->
+      <form role="search" aria-label="site">
+        <label>
+          <span>Search</span>
+          <input type="search" />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </header>
+
+    <br />
+
+    <main>
+      <h1>Products Page</h1>
+      <aside aria-label="Left Side Bar">
+        <article>
+          <h2>Fake Filter Side Bar</h2>
+          <form action="#" onsubmit="makeFakeFilter()">
+            <label for="authorFilter">By Author</label>
+            <input type="text" id="authorFilter" name="authorFilter" />
+            <br />
+            <label for="priceFilter">By Price</label>
+            <input
+              type="range"
+              min="$0.99"
+              max="$200.00"
+              id="priceFilter"
+              name="priceFilter"
+            />
+            <br />
+            <label for="releaseFilter">By Release Date</label>
+            <input type="date" id="releaseFilter" name="releaseFilter" />
+            <br />
+            <label for="pageCountFilter">By Page Count</label>
+            <input type="number" id="pageCountFilter" name="pageCountFilter" />
+            <br />
+            <button type="submit">Submit</button>
+          </form>
+        </article>
+      </aside>
+
+      <article>
+        <h2>Products</h2>
+        <section>
+          <h3>Hot Buys</h3>
+          <ul class="product-grid">
+            <!--do I make these clickable and then add an animation to a product view?-->
+            <li>
+              <article>
+                <h4>The Science Book</h4>
+                <img
+                  src="./assets/books/GeneralScienceBook.jpg"
+                  alt="The Science Book"
+                />
+                <section>
+                  <h5>
+                    <span style="text-decoration: line-through">$19.99</span>
+                    <span style="color: green">$15.99</span>
+                  </h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Biology 4th Ed.</h4>
+                <img
+                  src="./assets/books/BiologyBook1.jpg"
+                  alt="Biology 4th Edition"
+                />
+                <section>
+                  <h5>
+                    <span style="text-decoration: line-through">$30.99</span>
+                    <span style="color: green">$20.99</span>
+                  </h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Quantum Physics</h4>
+                <img
+                  src="./assets/books/PhysicsBook.jpg"
+                  alt="Quantum Physics"
+                />
+                <section>
+                  <h5>
+                    <span style="text-decoration: line-through">$190.99</span>
+                    <span style="color: green">$150.99</span>
+                  </h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Plant Biology</h4>
+                <img
+                  src="./assets/books/BiologyBook3.jpg"
+                  alt="Plant Biology"
+                />
+                <section>
+                  <h5>
+                    <span style="text-decoration: line-through">$10.99</span>
+                    <span style="color: green">$2.00</span>
+                  </h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Nuclear Physics</h4>
+                <img
+                  src="./assets/books/PhysicsBook2.jpg"
+                  alt="Nuclear Physics"
+                />
+                <section>
+                  <h5>
+                    <span style="text-decoration: line-through">$120.99</span>
+                    <span style="color: green">$80.50</span>
+                  </h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>3 Month Subscription</h4>
+                <img
+                  src="./assets/books/AllBooks.jpg"
+                  alt="3 Month Subscription"
+                />
+                <section>
+                  <h5>
+                    <span style="text-decoration: line-through">$89.99</span>
+                    <span style="color: green">$35.99</span>
+                  </h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Best Sellers:</h2>
+          <ul class="product-grid">
+            <!--do I make these clickable and then add an animation to a product view?-->
+            <li>
+              <article>
+                <h4>The Eight Day of Creation</h4>
+                <img
+                  src="./assets/books/BiologyBook2.jpg"
+                  alt="The Eight Day of Creation"
+                />
+                <section>
+                  <h5>$84.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Practical Chemistry Labs</h4>
+                <img
+                  src="./assets/books/ChemistryBook.jpg"
+                  alt="Practical Checmistry Labs"
+                />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Modern Atomic and Nucle...</h4>
+                <img
+                  src="./assets/books/PhysicsBook3.jpg"
+                  alt="Modern Atomic and Nuclear Physics"
+                />
+                <section>
+                  <h5>$156.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Chemistry Lab Book</h4>
+                <img
+                  src="./assets/books/ChemistryBook3.jpg"
+                  alt="Chemistry Lab Book"
+                />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Lab Notebooks</h4>
+                <img
+                  src="./assets/books/generalLabNotebook.jpg"
+                  alt="General Lab Notebook"
+                />
+                <section>
+                  <h5>$16.50</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>The Golden Book of Chem...</h4>
+                <img
+                  src="./assets/books/ChemistryBook2.jpg"
+                  alt="The Golden Book of Chemistry Experiments"
+                />
+                <section>
+                  <h5>$54.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>New Products</h2>
+          <ul class="product-grid">
+            <!--do I make these clickable and then add an animation to a product view?-->
+            <li>
+              <article>
+                <h4>Physics of Everyday Things</h4>
+                <img
+                  src="./assets/books/NewPhysics.jpg"
+                  alt=" The Physics of Everyday Things"
+                />
+                <section>
+                  <h5>$49.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>The Compass of Pleasure</h4>
+                <img
+                  src="./assets/books/NewProductBook.jpg"
+                  alt="The Compass of Pleasure"
+                />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Chemistry for Breakfast</h4>
+                <img
+                  src="./assets/books/newChemBook.jpg"
+                  alt="Chemistry for Breakfast"
+                />
+                <section>
+                  <h5>$24.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Every Tool's a Hammer</h4>
+                <img
+                  src="./assets/books/newFunBook.jpg"
+                  alt="Every Tool's a Hammer"
+                />
+                <section>
+                  <h5>$15.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Science: The Definitive Vis...</h4>
+                <img
+                  src="./assets/books/newSmithsBook.jpg"
+                  alt="Science: The Definitive Visual Guide"
+                />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h4>Do Hard Things</h4>
+                <img
+                  src="./assets/books/newHardBook.jpd.jpg"
+                  alt="Do Hard Things"
+                />
+                <section>
+                  <h5>$19.99</h5>
+                  <div class="rating">
+                    <input type="radio" name="rating" value="5" id="5" />
+                    <label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4" />
+                    <label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3" />
+                    <label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2" />
+                    <label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1" />
+                    <label for="1">☆</label>
+                  </div>
+                  <button>Add To Cart</button>
+                </section>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <br />
+    <!--footer at bottom of page-->
+    <footer>
+      <!--footer left side logo-->
+      <a href="">
+        <img src="./assets/smallVolga-logo.svg" alt="smallVolgaLogo" />
+      </a>
+      <!--center git hub link in footer-->
+      <a href="https://github.com/CurtMicro/Volga-Project">
+        <img
+          id="github-logo"
+          src="./assets/blackGithubIcon.png"
+          alt="blackGithubIcon"
+        />
+      </a>
+
+      <!--footer right stacked side nav-->
+      <nav>
+        <ul>
+          <li>
+            <a href="./">Home</a>
+          </li>
+          <li>
+            <a href="./products.html">Products</a>
+          </li>
+          <li>
+            <a href="./services.html">Services</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

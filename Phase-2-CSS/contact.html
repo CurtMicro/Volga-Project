@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Lab, Book, Equipment, School, Education" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./globals.css" />
+    <title>Contact Volga</title>
+
+    <script>
+      function sendFakeEmail() {
+        alert("Sent Fake Email Succesfully");
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <!--top middle side logo-->
+      <a href="./">
+        <img src="./assets/Volga-logo.svg" alt="Volga Logo" />
+      </a>
+      <!--top right side nav -->
+      <nav>
+        <ul>
+          <li>
+            <a href="./">Home</a>
+          </li>
+          <li>
+            <a href="./products.html">Products</a>
+          </li>
+          <li>
+            <a href="./services.html">Services</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <!--top right search bar won't function...or will it? maybe-->
+      <form role="search" aria-label="site">
+        <label>
+          <span>Search</span>
+          <input type="search" />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </header>
+
+    <br />
+
+    <main>
+      <article>
+        <h2>Contant Us</h2>
+        <form onsubmit="return sendFakeEmail()">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" />
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" />
+          <br />
+          <br />
+          <label for="phoneNumber">Phone Number:</label>
+          <br />
+          <input type="tel" id="phoneNumber" name="phoneNumber" />
+          <br />
+          <br />
+          <label for="email">Email:</label>
+          <br />
+          <input type="email" id="email" name="email" />
+          <br />
+          <br />
+          <label for="description">Description:</label>
+          <br />
+          <textarea name="description" id="description" cols="30" rows="10">
+Write a Short Description for your request.
+          </textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </article>
+      <aside aria-label="Left Side Bar">
+        <section>
+          <h3>Message Us</h3>
+          <ul>
+            <li>
+              <h4>Office Number:</h4>
+              <a href="tel:123-456-7890"></a>(123)-456-7890
+            </li>
+            <li>
+              <h4>Email Address:</h4>
+              <a href="mailto:volgaScience@theFuture.com"
+                >volgaScience@theFuture.com</a
+              >
+            </li>
+          </ul>
+        </section>
+      </aside>
+
+      <aside aria-label="Right Side Bar">
+        <section>
+          <h3>Or Come See Us</h3>
+          <ul>
+            <li>
+              <h4>Office Address:</h4>
+              <span>8464 JemaTella Ln</span>
+              <p>Weracoma, WI <i>80412</i></p>
+            </li>
+            <li>
+              <h4>Business Hours:</h4>
+              <span>Mon-Fri 9am-5pm</span>
+            </li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+
+    <br />
+    <!--footer at bottom of page-->
+    <footer>
+      <!--footer left side logo-->
+      <a href="">
+        <img src="./assets/smallVolga-logo.svg" alt="smallVolgaLogo" />
+      </a>
+      <!--center git hub link in footer-->
+      <a href="https://github.com/CurtMicro/Volga-Project">
+        <img
+          id="github-logo"
+          src="./assets/blackGithubIcon.png"
+          alt="blackGithubIcon"
+        />
+      </a>
+
+      <!--footer right stacked side nav-->
+      <nav>
+        <ul>
+          <li>
+            <a href="./">Home</a>
+          </li>
+          <li>
+            <a href="./products.html">Products</a>
+          </li>
+          <li>
+            <a href="./services.html">Services</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
