@@ -1,0 +1,30 @@
+#service-container,
+#details-container {
+  width: 100%;
+}
+
+#service-container ul {
+  margin-top: 1rem;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+  height: auto;
+}
+#details-container ol {
+  margin-top: 1rem;
+  display: flex;
+  grid-auto-flow: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 3rem;
+  height: auto;
+}
+
+main li {
+  width: 16rem;
+  height: 8rem;
+  outline: 1px solid#0095ff55;
+  border-radius: 4px;
+  background-color: #0095ff;
+}

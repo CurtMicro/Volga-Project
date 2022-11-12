@@ -1,0 +1,31 @@
+#hot-buys,
+#services,
+#mid-nav-container {
+  margin-top: 2rem;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hot-buys img {
+  width: 14rem;
+  height: 18rem;
+  background-position: center;
+  background-size: cover;
+  background-color: #0095ff;
+  outline: 2px #0095ff solid;
+}
+
+#services {
+  gap: 4rem;
+}
+#mid-nav-container a {
+  width: 100%;
+}
+
+#mid-nav-container img {
+  width: 10rem;
+  height: 10rem;
+}

@@ -6,6 +6,7 @@
     <meta name="keywords" content="Lab, Book, Equipment, School, Education" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./globals.css" />
+    <link rel="stylesheet" href="./styles/contacts.css" />
     <title>Contact Volga</title>
 
     <script>
@@ -51,66 +52,71 @@
 
     <main>
       <article>
-        <h2>Contant Us</h2>
+        <h1>Contact Us</h1>
+        <br />
         <form onsubmit="return sendFakeEmail()">
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname" />
-          <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="lname" />
+          <div>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" />
+          </div>
+          <div>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" />
+          </div>
+          <div>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+          </div>
           <br />
-          <br />
-          <label for="phoneNumber">Phone Number:</label>
-          <br />
-          <input type="tel" id="phoneNumber" name="phoneNumber" />
-          <br />
-          <br />
-          <label for="email">Email:</label>
-          <br />
-          <input type="email" id="email" name="email" />
-          <br />
-          <br />
-          <label for="description">Description:</label>
-          <br />
-          <textarea name="description" id="description" cols="30" rows="10">
+          <div id="description-container">
+            <label for="description">Description:</label>
+            <br />
+            <textarea name="description" id="description" cols="30" rows="10">
 Write a Short Description for your request.
-          </textarea>
-          <input type="submit" value="Submit" />
+          </textarea
+            >
+          </div>
+          <input id="contact-submit" type="submit" value="Submit" />
         </form>
       </article>
-      <aside aria-label="Left Side Bar">
+      <div id="left-info-bar">
         <section>
-          <h3>Message Us</h3>
+          <h2>Message Us</h2>
           <ul>
             <li>
-              <h4>Office Number:</h4>
+              <h3>Office Number:</h3>
               <a href="tel:123-456-7890"></a>(123)-456-7890
             </li>
             <li>
-              <h4>Email Address:</h4>
+              <h3>Email Address:</h3>
               <a href="mailto:volgaScience@theFuture.com"
                 >volgaScience@theFuture.com</a
               >
             </li>
           </ul>
         </section>
-      </aside>
+      </div>
 
-      <aside aria-label="Right Side Bar">
+      <div id="right-side-bar">
         <section>
-          <h3>Or Come See Us</h3>
+          <h2>Or Come See Us</h2>
           <ul>
             <li>
-              <h4>Office Address:</h4>
+              <h3>Office Address:</h3>
               <span>8464 JemaTella Ln</span>
               <p>Weracoma, WI <i>80412</i></p>
             </li>
             <li>
-              <h4>Business Hours:</h4>
+              <h3>Business Hours:</h3>
               <span>Mon-Fri 9am-5pm</span>
             </li>
           </ul>
         </section>
-      </aside>
+      </div>
     </main>
 
     <br />

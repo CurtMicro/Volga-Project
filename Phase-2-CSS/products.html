@@ -6,6 +6,8 @@
     <meta name="keywords" content="Lab, Book, Equipment, School, Education" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./globals.css" />
+    <link rel="stylesheet" href="./styles/products.css" />
+    <link rel="stylesheet" href="./styles/stars.css" />
     <title>Volga Products</title>
 
     <script>
@@ -51,32 +53,29 @@
 
     <main>
       <h1>Products Page</h1>
-      <aside aria-label="Left Side Bar">
+      <div id="filter-bar">
         <article>
-          <h2>Fake Filter Side Bar</h2>
+          <h2>Fake Filter Bar</h2>
           <form action="#" onsubmit="makeFakeFilter()">
             <label for="authorFilter">By Author</label>
             <input type="text" id="authorFilter" name="authorFilter" />
-            <br />
             <label for="priceFilter">By Price</label>
             <input
               type="range"
-              min="$0.99"
-              max="$200.00"
+              min="0.99"
+              max="200.00"
               id="priceFilter"
               name="priceFilter"
             />
-            <br />
             <label for="releaseFilter">By Release Date</label>
             <input type="date" id="releaseFilter" name="releaseFilter" />
-            <br />
             <label for="pageCountFilter">By Page Count</label>
             <input type="number" id="pageCountFilter" name="pageCountFilter" />
             <br />
-            <button type="submit">Submit</button>
+            <button type="submit">Filter</button>
           </form>
         </article>
-      </aside>
+      </div>
 
       <article>
         <h2>Products</h2>
@@ -97,16 +96,16 @@
                     <span style="color: green">$15.99</span>
                   </h5>
                   <div class="rating">
-                    <input type="radio" name="rating" value="5" id="5" />
-                    <label for="5">☆</label>
-                    <input type="radio" name="rating" value="4" id="4" />
-                    <label for="4">☆</label>
-                    <input type="radio" name="rating" value="3" id="3" />
-                    <label for="3">☆</label>
-                    <input type="radio" name="rating" value="2" id="2" />
-                    <label for="2">☆</label>
-                    <input type="radio" name="rating" value="1" id="1" />
-                    <label for="1">☆</label>
+                    <input type="radio" name="rating" value="a5" id="a5" />
+                    <label for="a5">☆</label>
+                    <input type="radio" name="rating" value="a4" id="a4" />
+                    <label for="a4">☆</label>
+                    <input type="radio" name="rating" value="a3" id="a3" />
+                    <label for="a3">☆</label>
+                    <input type="radio" name="rating" value="a2" id="a2" />
+                    <label for="a2">☆</label>
+                    <input type="radio" name="rating" value="a1" id="a1" />
+                    <label for="a1">☆</label>
                   </div>
                   <button>Add To Cart</button>
                 </section>
@@ -125,16 +124,16 @@
                     <span style="color: green">$20.99</span>
                   </h5>
                   <div class="rating">
-                    <input type="radio" name="rating" value="5" id="5" />
-                    <label for="5">☆</label>
-                    <input type="radio" name="rating" value="4" id="4" />
-                    <label for="4">☆</label>
-                    <input type="radio" name="rating" value="3" id="3" />
-                    <label for="3">☆</label>
-                    <input type="radio" name="rating" value="2" id="2" />
-                    <label for="2">☆</label>
-                    <input type="radio" name="rating" value="1" id="1" />
-                    <label for="1">☆</label>
+                    <input type="radio" name="rating" value="b5" id="b5" />
+                    <label for="b5">☆</label>
+                    <input type="radio" name="rating" value="b4" id="b4" />
+                    <label for="b4">☆</label>
+                    <input type="radio" name="rating" value="b3" id="b3" />
+                    <label for="b3">☆</label>
+                    <input type="radio" name="rating" value="b2" id="b2" />
+                    <label for="b2">☆</label>
+                    <input type="radio" name="rating" value="b1" id="b1" />
+                    <label for="b1">☆</label>
                   </div>
                   <button>Add To Cart</button>
                 </section>
@@ -153,16 +152,16 @@
                     <span style="color: green">$150.99</span>
                   </h5>
                   <div class="rating">
-                    <input type="radio" name="rating" value="5" id="5" />
-                    <label for="5">☆</label>
-                    <input type="radio" name="rating" value="4" id="4" />
-                    <label for="4">☆</label>
-                    <input type="radio" name="rating" value="3" id="3" />
-                    <label for="3">☆</label>
-                    <input type="radio" name="rating" value="2" id="2" />
-                    <label for="2">☆</label>
-                    <input type="radio" name="rating" value="1" id="1" />
-                    <label for="1">☆</label>
+                    <input type="radio" name="rating" value="c5" id="c5" />
+                    <label for="c5">☆</label>
+                    <input type="radio" name="rating" value="c4" id="c4" />
+                    <label for="c4">☆</label>
+                    <input type="radio" name="rating" value="c3" id="c3" />
+                    <label for="c3">☆</label>
+                    <input type="radio" name="rating" value="c2" id="c2" />
+                    <label for="c2">☆</label>
+                    <input type="radio" name="rating" value="c1" id="c1" />
+                    <label for="c1">☆</label>
                   </div>
                   <button>Add To Cart</button>
                 </section>
@@ -181,16 +180,16 @@
                     <span style="color: green">$2.00</span>
                   </h5>
                   <div class="rating">
-                    <input type="radio" name="rating" value="5" id="5" />
-                    <label for="5">☆</label>
-                    <input type="radio" name="rating" value="4" id="4" />
-                    <label for="4">☆</label>
-                    <input type="radio" name="rating" value="3" id="3" />
-                    <label for="3">☆</label>
-                    <input type="radio" name="rating" value="2" id="2" />
-                    <label for="2">☆</label>
-                    <input type="radio" name="rating" value="1" id="1" />
-                    <label for="1">☆</label>
+                    <input type="radio" name="rating" value="d5" id="d5" />
+                    <label for="d5">☆</label>
+                    <input type="radio" name="rating" value="d4" id="d4" />
+                    <label for="d4">☆</label>
+                    <input type="radio" name="rating" value="d3" id="d3" />
+                    <label for="d3">☆</label>
+                    <input type="radio" name="rating" value="d2" id="d2" />
+                    <label for="d2">☆</label>
+                    <input type="radio" name="rating" value="d1" id="d1" />
+                    <label for="d1">☆</label>
                   </div>
                   <button>Add To Cart</button>
                 </section>
@@ -209,16 +208,16 @@
                     <span style="color: green">$80.50</span>
                   </h5>
                   <div class="rating">
-                    <input type="radio" name="rating" value="5" id="5" />
-                    <label for="5">☆</label>
-                    <input type="radio" name="rating" value="4" id="4" />
-                    <label for="4">☆</label>
-                    <input type="radio" name="rating" value="3" id="3" />
-                    <label for="3">☆</label>
-                    <input type="radio" name="rating" value="2" id="2" />
-                    <label for="2">☆</label>
-                    <input type="radio" name="rating" value="1" id="1" />
-                    <label for="1">☆</label>
+                    <input type="radio" name="rating" value="e5" id="e5" />
+                    <label for="e5">☆</label>
+                    <input type="radio" name="rating" value="e4" id="e4" />
+                    <label for="e4">☆</label>
+                    <input type="radio" name="rating" value="e3" id="e3" />
+                    <label for="e3">☆</label>
+                    <input type="radio" name="rating" value="e2" id="e2" />
+                    <label for="e2">☆</label>
+                    <input type="radio" name="rating" value="e1" id="e1" />
+                    <label for="e1">☆</label>
                   </div>
                   <button>Add To Cart</button>
                 </section>
@@ -237,16 +236,16 @@
                     <span style="color: green">$35.99</span>
                   </h5>
                   <div class="rating">
-                    <input type="radio" name="rating" value="5" id="5" />
-                    <label for="5">☆</label>
-                    <input type="radio" name="rating" value="4" id="4" />
-                    <label for="4">☆</label>
-                    <input type="radio" name="rating" value="3" id="3" />
-                    <label for="3">☆</label>
-                    <input type="radio" name="rating" value="2" id="2" />
-                    <label for="2">☆</label>
-                    <input type="radio" name="rating" value="1" id="1" />
-                    <label for="1">☆</label>
+                    <input type="radio" name="rating" value="f5" id="f5" />
+                    <label for="f5">☆</label>
+                    <input type="radio" name="rating" value="f4" id="f4" />
+                    <label for="f4">☆</label>
+                    <input type="radio" name="rating" value="f3" id="f3" />
+                    <label for="f3">☆</label>
+                    <input type="radio" name="rating" value="f2" id="f2" />
+                    <label for="f2">☆</label>
+                    <input type="radio" name="rating" value="f1" id="f1" />
+                    <label for="f1">☆</label>
                   </div>
                   <button>Add To Cart</button>
                 </section>
@@ -268,16 +267,16 @@
                 <section>
                   <h5>$84.99</h5>
                   <div class="rating">
-                    <input type="radio" name="rating" value="5" id="5" />
-                    <label for="5">☆</label>
-                    <input type="radio" name="rating" value="4" id="4" />
-                    <label for="4">☆</label>
-                    <input type="radio" name="rating" value="3" id="3" />
-                    <label for="3">☆</label>
-                    <input type="radio" name="rating" value="2" id="2" />
-                    <label for="2">☆</label>
-                    <input type="radio" name="rating" value="1" id="1" />
-                    <label for="1">☆</label>
+                    <input type="radio" name="rating" value="g5" id="g5" />
+                    <label for="g5">☆</label>
+                    <input type="radio" name="rating" value="g4" id="g4" />
+                    <label for="g4">☆</label>
+                    <input type="radio" name="rating" value="g3" id="g3" />
+                    <label for="g3">☆</label>
+                    <input type="radio" name="rating" value="g2" id="g2" />
+                    <label for="g2">☆</label>
+                    <input type="radio" name="rating" value="g1" id="g1" />
+                    <label for="g1">☆</label>
                   </div>
                   <button>Add To Cart</button>
                 </section>
@@ -293,16 +292,16 @@
                 <section>
                   <h5>$19.99</h5>
                   <div class="rating">
-                    <input type="radio" name="rating" value="5" id="5" />
-                    <label for="5">☆</label>
-                    <input type="radio" name="rating" value="4" id="4" />
-                    <label for="4">☆</label>
-                    <input type="radio" name="rating" value="3" id="3" />
-                    <label for="3">☆</label>
-                    <input type="radio" name="rating" value="2" id="2" />
-                    <label for="2">☆</label>
-                    <input type="radio" name="rating" value="1" id="1" />
-                    <label for="1">☆</label>
+                    <input type="radio" name="rating" value="h5" id="h5" />
+                    <label for="h5">☆</label>
+                    <input type="radio" name="rating" value="h4" id="h4" />
+                    <label for="h4">☆</label>
+                    <input type="radio" name="rating" value="h3" id="h3" />
+                    <label for="h3">☆</label>
+                    <input type="radio" name="rating" value="h2" id="h2" />
+                    <label for="h2">☆</label>
+                    <input type="radio" name="rating" value="h1" id="h1" />
+                    <label for="h1">☆</label>
                   </div>
                   <button>Add To Cart</button>
                 </section>
@@ -318,16 +317,16 @@
                 <section>
                   <h5>$156.99</h5>
                   <div class="rating">
-                    <input type="radio" name="rating" value="5" id="5" />
-                    <label for="5">☆</label>
-                    <input type="radio" name="rating" value="4" id="4" />
-                    <label for="4">☆</label>
-                    <input type="radio" name="rating" value="3" id="3" />
-                    <label for="3">☆</label>
-                    <input type="radio" name="rating" value="2" id="2" />
-                    <label for="2">☆</label>
-                    <input type="radio" name="rating" value="1" id="1" />
-                    <label for="1">☆</label>
+                    <input type="radio" name="rating" value="i5" id="i5" />
+                    <label for="i5">☆</label>
+                    <input type="radio" name="rating" value="i4" id="i4" />
+                    <label for="i4">☆</label>
+                    <input type="radio" name="rating" value="i3" id="i3" />
+                    <label for="i3">☆</label>
+                    <input type="radio" name="rating" value="i2" id="i2" />
+                    <label for="i2">☆</label>
+                    <input type="radio" name="rating" value="i1" id="i1" />
+                    <label for="i1">☆</label>
                   </div>
                   <button>Add To Cart</button>
                 </section>
@@ -343,16 +342,16 @@
                 <section>
                   <h5>$19.99</h5>
                   <div class="rating">
-                    <input type="radio" name="rating" value="5" id="5" />
-                    <label for="5">☆</label>
-                    <input type="radio" name="rating" value="4" id="4" />
-                    <label for="4">☆</label>
-                    <input type="radio" name="rating" value="3" id="3" />
-                    <label for="3">☆</label>
-                    <input type="radio" name="rating" value="2" id="2" />
-                    <label for="2">☆</label>
-                    <input type="radio" name="rating" value="1" id="1" />
-                    <label for="1">☆</label>
+                    <input type="radio" name="rating" value="j5" id="j5" />
+                    <label for="j5">☆</label>
+                    <input type="radio" name="rating" value="j4" id="j4" />
+                    <label for="j4">☆</label>
+                    <input type="radio" name="rating" value="j3" id="j3" />
+                    <label for="j3">☆</label>
+                    <input type="radio" name="rating" value="j2" id="j2" />
+                    <label for="j2">☆</label>
+                    <input type="radio" name="rating" value="j1" id="j1" />
+                    <label for="j1">☆</label>
                   </div>
                   <button>Add To Cart</button>
                 </section>
@@ -368,16 +367,16 @@
                 <section>
                   <h5>$16.50</h5>
                   <div class="rating">
-                    <input type="radio" name="rating" value="5" id="5" />
-                    <label for="5">☆</label>
-                    <input type="radio" name="rating" value="4" id="4" />
-                    <label for="4">☆</label>
-                    <input type="radio" name="rating" value="3" id="3" />
-                    <label for="3">☆</label>
-                    <input type="radio" name="rating" value="2" id="2" />
-                    <label for="2">☆</label>
-                    <input type="radio" name="rating" value="1" id="1" />
-                    <label for="1">☆</label>
+                    <input type="radio" name="rating" value="k5" id="k5" />
+                    <label for="k5">☆</label>
+                    <input type="radio" name="rating" value="k4" id="k4" />
+                    <label for="k4">☆</label>
+                    <input type="radio" name="rating" value="k3" id="k3" />
+                    <label for="k3">☆</label>
+                    <input type="radio" name="rating" value="k2" id="k2" />
+                    <label for="k2">☆</label>
+                    <input type="radio" name="rating" value="k1" id="k1" />
+                    <label for="k1">☆</label>
                   </div>
                   <button>Add To Cart</button>
                 </section>
@@ -393,16 +392,16 @@
                 <section>
                   <h5>$54.99</h5>
                   <div class="rating">
-                    <input type="radio" name="rating" value="5" id="5" />
-                    <label for="5">☆</label>
-                    <input type="radio" name="rating" value="4" id="4" />
-                    <label for="4">☆</label>
-                    <input type="radio" name="rating" value="3" id="3" />
-                    <label for="3">☆</label>
-                    <input type="radio" name="rating" value="2" id="2" />
-                    <label for="2">☆</label>
-                    <input type="radio" name="rating" value="1" id="1" />
-                    <label for="1">☆</label>
+                    <input type="radio" name="rating" value="l5" id="l5" />
+                    <label for="l5">☆</label>
+                    <input type="radio" name="rating" value="l4" id="l4" />
+                    <label for="l4">☆</label>
+                    <input type="radio" name="rating" value="l3" id="l3" />
+                    <label for="l3">☆</label>
+                    <input type="radio" name="rating" value="l2" id="l2" />
+                    <label for="l2">☆</label>
+                    <input type="radio" name="rating" value="l1" id="l1" />
+                    <label for="l1">☆</label>
                   </div>
                   <button>Add To Cart</button>
                 </section>
@@ -424,16 +423,16 @@
                 <section>
                   <h5>$49.99</h5>
                   <div class="rating">
-                    <input type="radio" name="rating" value="5" id="5" />
-                    <label for="5">☆</label>
-                    <input type="radio" name="rating" value="4" id="4" />
-                    <label for="4">☆</label>
-                    <input type="radio" name="rating" value="3" id="3" />
-                    <label for="3">☆</label>
-                    <input type="radio" name="rating" value="2" id="2" />
-                    <label for="2">☆</label>
-                    <input type="radio" name="rating" value="1" id="1" />
-                    <label for="1">☆</label>
+                    <input type="radio" name="rating" value="m5" id="m5" />
+                    <label for="m5">☆</label>
+                    <input type="radio" name="rating" value="m4" id="m4" />
+                    <label for="m4">☆</label>
+                    <input type="radio" name="rating" value="m3" id="m3" />
+                    <label for="m3">☆</label>
+                    <input type="radio" name="rating" value="m2" id="m2" />
+                    <label for="m2">☆</label>
+                    <input type="radio" name="rating" value="m1" id="m1" />
+                    <label for="m1">☆</label>
                   </div>
                   <button>Add To Cart</button>
                 </section>
@@ -449,16 +448,16 @@
                 <section>
                   <h5>$19.99</h5>
                   <div class="rating">
-                    <input type="radio" name="rating" value="5" id="5" />
-                    <label for="5">☆</label>
-                    <input type="radio" name="rating" value="4" id="4" />
-                    <label for="4">☆</label>
-                    <input type="radio" name="rating" value="3" id="3" />
-                    <label for="3">☆</label>
-                    <input type="radio" name="rating" value="2" id="2" />
-                    <label for="2">☆</label>
-                    <input type="radio" name="rating" value="1" id="1" />
-                    <label for="1">☆</label>
+                    <input type="radio" name="rating" value="n5" id="n5" />
+                    <label for="n5">☆</label>
+                    <input type="radio" name="rating" value="n4" id="n4" />
+                    <label for="n4">☆</label>
+                    <input type="radio" name="rating" value="n3" id="n3" />
+                    <label for="n3">☆</label>
+                    <input type="radio" name="rating" value="n2" id="n2" />
+                    <label for="n2">☆</label>
+                    <input type="radio" name="rating" value="n1" id="n1" />
+                    <label for="n1">☆</label>
                   </div>
                   <button>Add To Cart</button>
                 </section>
@@ -474,16 +473,16 @@
                 <section>
                   <h5>$24.99</h5>
                   <div class="rating">
-                    <input type="radio" name="rating" value="5" id="5" />
-                    <label for="5">☆</label>
-                    <input type="radio" name="rating" value="4" id="4" />
-                    <label for="4">☆</label>
-                    <input type="radio" name="rating" value="3" id="3" />
-                    <label for="3">☆</label>
-                    <input type="radio" name="rating" value="2" id="2" />
-                    <label for="2">☆</label>
-                    <input type="radio" name="rating" value="1" id="1" />
-                    <label for="1">☆</label>
+                    <input type="radio" name="rating" value="o5" id="o5" />
+                    <label for="o5">☆</label>
+                    <input type="radio" name="rating" value="o4" id="o4" />
+                    <label for="o4">☆</label>
+                    <input type="radio" name="rating" value="o3" id="o3" />
+                    <label for="o3">☆</label>
+                    <input type="radio" name="rating" value="o2" id="o2" />
+                    <label for="o2">☆</label>
+                    <input type="radio" name="rating" value="o1" id="o1" />
+                    <label for="o1">☆</label>
                   </div>
                   <button>Add To Cart</button>
                 </section>
@@ -499,16 +498,16 @@
                 <section>
                   <h5>$15.99</h5>
                   <div class="rating">
-                    <input type="radio" name="rating" value="5" id="5" />
-                    <label for="5">☆</label>
-                    <input type="radio" name="rating" value="4" id="4" />
-                    <label for="4">☆</label>
-                    <input type="radio" name="rating" value="3" id="3" />
-                    <label for="3">☆</label>
-                    <input type="radio" name="rating" value="2" id="2" />
-                    <label for="2">☆</label>
-                    <input type="radio" name="rating" value="1" id="1" />
-                    <label for="1">☆</label>
+                    <input type="radio" name="rating" value="p5" id="p5" />
+                    <label for="p5">☆</label>
+                    <input type="radio" name="rating" value="p4" id="p4" />
+                    <label for="p4">☆</label>
+                    <input type="radio" name="rating" value="p3" id="p3" />
+                    <label for="p3">☆</label>
+                    <input type="radio" name="rating" value="p2" id="p2" />
+                    <label for="p2">☆</label>
+                    <input type="radio" name="rating" value="p1" id="p1" />
+                    <label for="p1">☆</label>
                   </div>
                   <button>Add To Cart</button>
                 </section>
@@ -524,16 +523,16 @@
                 <section>
                   <h5>$19.99</h5>
                   <div class="rating">
-                    <input type="radio" name="rating" value="5" id="5" />
-                    <label for="5">☆</label>
-                    <input type="radio" name="rating" value="4" id="4" />
-                    <label for="4">☆</label>
-                    <input type="radio" name="rating" value="3" id="3" />
-                    <label for="3">☆</label>
-                    <input type="radio" name="rating" value="2" id="2" />
-                    <label for="2">☆</label>
-                    <input type="radio" name="rating" value="1" id="1" />
-                    <label for="1">☆</label>
+                    <input type="radio" name="rating" value="q5" id="q5" />
+                    <label for="q5">☆</label>
+                    <input type="radio" name="rating" value="q4" id="q4" />
+                    <label for="q4">☆</label>
+                    <input type="radio" name="rating" value="q3" id="q3" />
+                    <label for="q3">☆</label>
+                    <input type="radio" name="rating" value="q2" id="q2" />
+                    <label for="q2">☆</label>
+                    <input type="radio" name="rating" value="q1" id="q1" />
+                    <label for="q1">☆</label>
                   </div>
                   <button>Add To Cart</button>
                 </section>
@@ -549,16 +548,16 @@
                 <section>
                   <h5>$19.99</h5>
                   <div class="rating">
-                    <input type="radio" name="rating" value="5" id="5" />
-                    <label for="5">☆</label>
-                    <input type="radio" name="rating" value="4" id="4" />
-                    <label for="4">☆</label>
-                    <input type="radio" name="rating" value="3" id="3" />
-                    <label for="3">☆</label>
-                    <input type="radio" name="rating" value="2" id="2" />
-                    <label for="2">☆</label>
-                    <input type="radio" name="rating" value="1" id="1" />
-                    <label for="1">☆</label>
+                    <input type="radio" name="rating" value="r5" id="r5" />
+                    <label for="r5">☆</label>
+                    <input type="radio" name="rating" value="r4" id="r4" />
+                    <label for="r4">☆</label>
+                    <input type="radio" name="rating" value="r3" id="r3" />
+                    <label for="r3">☆</label>
+                    <input type="radio" name="rating" value="r2" id="r2" />
+                    <label for="r2">☆</label>
+                    <input type="radio" name="rating" value="r1" id="r1" />
+                    <label for="r1">☆</label>
                   </div>
                   <button>Add To Cart</button>
                 </section>

@@ -6,6 +6,8 @@
     <meta name="keywords" content="Lab, Book, Equipment, School, Education" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./globals.css" />
+    <link rel="stylesheet" href="./styles/imageSlider.css" />
+    <link rel="stylesheet" href="./styles/homeContent.css" />
     <title>Volga Home</title>
   </head>
   <body>
@@ -50,16 +52,29 @@
         <h1>
           Many Find the Universe Confusing, <br />that's the beauty of it.
         </h1>
-        <br />
         <!-- Ie: CSS or JS/Jquery, try for MVP-->
         <div id="slider-button-container">
-          <button id="left-button">Left</button>
-          <button id="right-button">Right</button>
+          <button id="left-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+              />
+            </svg>
+          </button>
+          <button id="right-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+              />
+            </svg>
+          </button>
         </div>
 
-        <div>
+        <div id="image-container">
           <!--Imaged will be css background images with size of cover and a opacity shift to remove extra tunneling-->
-          <figure id="focused" class="slide">
+          <figure class="slide not-focused">
             <img
               class="slide-image"
               src="./assets/imageSlider/imageSlider1.jpg"
@@ -69,7 +84,7 @@
               Make sure to check our ever expanding content selection.
             </figcaption>
           </figure>
-          <figure class="slide not-focused">
+          <figure id="focused" class="slide">
             <img
               class="slide-image"
               src="./assets/imageSlider/BookImageSlide2.jpg"
@@ -97,7 +112,7 @@
 
       <br />
       <!-- Informational container-->
-      <div>
+      <div id="hot-buys">
         <article>
           <a href="./products.html">
             <h2>General Science Books</h2>
@@ -143,7 +158,7 @@
       </div>
 
       <h2>We offer a variety of Services</h2>
-      <div>
+      <div id="services">
         <article>
           <h3>Training Services</h3>
           <a href="./services.html">
@@ -179,7 +194,7 @@
         </article>
       </div>
       <!--middle of the page nav spit into 3 elements-->
-      <aside id="mid-nav-container">
+      <div id="mid-nav-container">
         <!--each has their own background image and a box shadow-->
 
         <a href="./products.html">
@@ -206,7 +221,7 @@
             alt="contact-image"
           />
         </a>
-      </aside>
+      </div>
     </main>
     <!--end main-->
 
